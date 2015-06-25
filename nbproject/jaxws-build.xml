@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-InsulinDoseCalculator" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator" destdir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/InsulinDoseCalculator/wsdl/qcs01.dei.uc.pt_8080/InsulinDoseCalculator.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://qcs01.dei.uc.pt:8080/InsulinDoseCalculator?wsdl" xnocompile="true" xendorsed="true" package="ws1">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/InsulinDoseCalculator/wsdl/qcs01.dei.uc.pt_8080/InsulinDoseCalculator.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-InsulinDoseCalculator" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws1"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator"/>
+    </target>
+    <target name="wsimport-client-Server" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Server"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Server" destdir="${build.generated.dir}/jax-wsCache/Server" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Server/wsdl/liis-lab.dei.uc.pt_8080/Server.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://liis-lab.dei.uc.pt:8080/Server?wsdl" xnocompile="true" xendorsed="true" package="ws2">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Server/wsdl/liis-lab.dei.uc.pt_8080/Server.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Server"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Server">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Server" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws2"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Server"/>
+    </target>
+    <target name="wsimport-client-InsulinDoseCalculator_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_1"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_1" destdir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_1" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/InsulinDoseCalculator_1/wsdl/qcs10.dei.uc.pt_8080/InsulinDoseCalculator.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://qcs10.dei.uc.pt:8080/InsulinDoseCalculator?wsdl" xnocompile="true" xendorsed="true" package="ws3">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/InsulinDoseCalculator_1/wsdl/qcs10.dei.uc.pt_8080/InsulinDoseCalculator.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-InsulinDoseCalculator_1" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws3"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_1"/>
+    </target>
+    <target name="wsimport-client-insulin" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/insulin"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/insulin" destdir="${build.generated.dir}/jax-wsCache/insulin" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/insulin/wsdl/qcs12.dei.uc.pt_8080/insulin.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://qcs12.dei.uc.pt:8080/insulin?wsdl" xnocompile="true" xendorsed="true" package="ws4">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/insulin/wsdl/qcs12.dei.uc.pt_8080/insulin.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/insulin"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/insulin">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-insulin" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws4"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/insulin"/>
+    </target>
+    <target name="wsimport-client-insulin_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/insulin_1"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/insulin_1" destdir="${build.generated.dir}/jax-wsCache/insulin_1" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/insulin_1/wsdl/qcs18.dei.uc.pt_8080/insulin.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://qcs18.dei.uc.pt:8080/insulin?wsdl" xnocompile="true" xendorsed="true" package="ws5">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/insulin_1/wsdl/qcs18.dei.uc.pt_8080/insulin.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/insulin_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/insulin_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-insulin_1" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws5"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/insulin_1"/>
+    </target>
+    <target name="wsimport-client-InsulinDoseCalculator_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_2"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_2" destdir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_2" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/InsulinDoseCalculator_2/wsdl/qcs16.dei.uc.pt_8080/InsulinDoseCalculator.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://qcs16.dei.uc.pt:8080/InsulinDoseCalculator?wsdl" xnocompile="true" xendorsed="true" package="ws6">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/InsulinDoseCalculator_2/wsdl/qcs16.dei.uc.pt_8080/InsulinDoseCalculator.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-InsulinDoseCalculator_2" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws6"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/InsulinDoseCalculator_2"/>
+    </target>
+    <target name="wsimport-client-WebService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WebService"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WebService" destdir="${build.generated.dir}/jax-wsCache/WebService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/WebService/wsdl/qcs19.dei.uc.pt/InsulinDoseCalculator/WebService.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://qcs19.dei.uc.pt/InsulinDoseCalculator/WebService?wsdl" xnocompile="true" xendorsed="true" package="ws9">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/WebService/wsdl/qcs19.dei.uc.pt/InsulinDoseCalculator/WebService.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WebService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WebService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WebService" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws9"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/WebService"/>
+    </target>
+    <target name="wsimport-client-insulinDosage" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/insulinDosage"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/insulinDosage" destdir="${build.generated.dir}/jax-wsCache/insulinDosage" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/insulinDosage/wsdl/qcs02.dei.uc.pt_8080/insulinDosage.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://qcs02.dei.uc.pt:8080/insulinDosage?wsdl" xnocompile="true" xendorsed="true" package="ws7">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/insulinDosage/wsdl/qcs02.dei.uc.pt_8080/insulinDosage.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/insulinDosage"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/insulinDosage">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-insulinDosage" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws7"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/insulinDosage"/>
+    </target>
+    <target name="wsimport-client-insulin_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/insulin_2"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/insulin_2" destdir="${build.generated.dir}/jax-wsCache/insulin_2" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/insulin_2/wsdl/qcs05.dei.uc.pt_8080/insulin.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://qcs05.dei.uc.pt:8080/insulin?wsdl" xnocompile="true" xendorsed="true" package="ws8">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/insulin_2/wsdl/qcs05.dei.uc.pt_8080/insulin.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/insulin_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/insulin_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-insulin_2" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws8"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/insulin_2"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-InsulinDoseCalculator, wsimport-client-Server, wsimport-client-InsulinDoseCalculator_1, wsimport-client-insulin, wsimport-client-insulin_1, wsimport-client-InsulinDoseCalculator_2, wsimport-client-WebService, wsimport-client-insulinDosage, wsimport-client-insulin_2"/>
+</project>

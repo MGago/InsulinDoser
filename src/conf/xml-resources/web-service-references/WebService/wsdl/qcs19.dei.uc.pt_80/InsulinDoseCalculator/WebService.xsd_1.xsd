@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservice.server/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservice.server/">
+
+<xs:element name="backgroundInsulinDose" type="tns:backgroundInsulinDose"/>
+
+<xs:element name="backgroundInsulinDoseResponse" type="tns:backgroundInsulinDoseResponse"/>
+
+<xs:element name="mealtimeInsulinDose" type="tns:mealtimeInsulinDose"/>
+
+<xs:element name="mealtimeInsulinDoseResponse" type="tns:mealtimeInsulinDoseResponse"/>
+
+<xs:element name="personalSensitivityToInsulin" type="tns:personalSensitivityToInsulin"/>
+
+<xs:element name="personalSensitivityToInsulinResponse" type="tns:personalSensitivityToInsulinResponse"/>
+
+<xs:complexType name="backgroundInsulinDose">
+<xs:sequence>
+<xs:element name="bodyWeight" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="backgroundInsulinDoseResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mealtimeInsulinDose">
+<xs:sequence>
+<xs:element name="carbohydrateAmount" type="xs:int"/>
+<xs:element name="carbohydrateToInsulinRatio" type="xs:int"/>
+<xs:element name="preMealBloodSugar" type="xs:int"/>
+<xs:element name="targetBloodSugar" type="xs:int"/>
+<xs:element name="personalSensitivity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mealtimeInsulinDoseResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="personalSensitivityToInsulin">
+<xs:sequence>
+<xs:element name="physicalActivityLevel" type="xs:int"/>
+<xs:element name="physicalActivitySamples" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="bloodSugarDropSamples" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="personalSensitivityToInsulinResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://service.calculator.server.qcs2015.fla.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="InsulinDoseCalculatorService" targetNamespace="http://service.calculator.server.qcs2015.fla.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.calculator.server.qcs2015.fla.com/" elementFormDefault="unqualified" targetNamespace="http://service.calculator.server.qcs2015.fla.com/" version="1.0">
+<xs:element name="background_insulin_dose" type="tns:background_insulin_dose"/>
+<xs:element name="background_insulin_doseResponse" type="tns:background_insulin_doseResponse"/>
+<xs:element name="mealtime_insulin_dose" type="tns:mealtime_insulin_dose"/>
+<xs:element name="mealtime_insulin_doseResponse" type="tns:mealtime_insulin_doseResponse"/>
+<xs:element name="personal_insulin_sensitivity" type="tns:personal_insulin_sensitivity"/>
+<xs:element name="personal_insulin_sensitivityResponse" type="tns:personal_insulin_sensitivityResponse"/>
+<xs:complexType name="personal_insulin_sensitivity">
+<xs:sequence>
+<xs:element name="physicalActivity" type="xs:int"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="physicalSamples" type="xs:int"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="bloodSamples" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="personal_insulin_sensitivityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="background_insulin_dose">
+<xs:sequence>
+<xs:element name="weight" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="background_insulin_doseResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="mealtime_insulin_dose">
+<xs:sequence>
+<xs:element name="carbsMeal" type="xs:int"/>
+<xs:element name="carbsUnit" type="xs:int"/>
+<xs:element name="actualBloodSugar" type="xs:int"/>
+<xs:element name="targetBloodSugar" type="xs:int"/>
+<xs:element name="individualSensivity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="mealtime_insulin_doseResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="background_insulin_dose">
+    <wsdl:part element="tns:background_insulin_dose" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="mealtime_insulin_doseResponse">
+    <wsdl:part element="tns:mealtime_insulin_doseResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="personal_insulin_sensitivityResponse">
+    <wsdl:part element="tns:personal_insulin_sensitivityResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="personal_insulin_sensitivity">
+    <wsdl:part element="tns:personal_insulin_sensitivity" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="mealtime_insulin_dose">
+    <wsdl:part element="tns:mealtime_insulin_dose" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="background_insulin_doseResponse">
+    <wsdl:part element="tns:background_insulin_doseResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="InsulinDoseCalculator">
+    <wsdl:operation name="personal_insulin_sensitivity">
+      <wsdl:input message="tns:personal_insulin_sensitivity" name="personal_insulin_sensitivity">
+    </wsdl:input>
+      <wsdl:output message="tns:personal_insulin_sensitivityResponse" name="personal_insulin_sensitivityResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="background_insulin_dose">
+      <wsdl:input message="tns:background_insulin_dose" name="background_insulin_dose">
+    </wsdl:input>
+      <wsdl:output message="tns:background_insulin_doseResponse" name="background_insulin_doseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mealtime_insulin_dose">
+      <wsdl:input message="tns:mealtime_insulin_dose" name="mealtime_insulin_dose">
+    </wsdl:input>
+      <wsdl:output message="tns:mealtime_insulin_doseResponse" name="mealtime_insulin_doseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InsulinDoseCalculatorServiceSoapBinding" type="tns:InsulinDoseCalculator">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="personal_insulin_sensitivity">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="personal_insulin_sensitivity">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="personal_insulin_sensitivityResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="background_insulin_dose">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="background_insulin_dose">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="background_insulin_doseResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mealtime_insulin_dose">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="mealtime_insulin_dose">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="mealtime_insulin_doseResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InsulinDoseCalculatorService">
+    <wsdl:port binding="tns:InsulinDoseCalculatorServiceSoapBinding" name="InsulinDoseCalculatorPort">
+      <soap:address location="http://qcs16.dei.uc.pt:8080/InsulinDoseCalculator"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

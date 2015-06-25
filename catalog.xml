@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://qcs06.dei.uc.pt:8080/InsulinDoseCalculator?wsdl" uri="src/conf/xml-resources/web-service-references/InsulinDoseCalculator/wsdl/qcs06.dei.uc.pt_8080/InsulinDoseCalculator.wsdl"/>
+    <system systemId="http://qcs06.dei.uc.pt:8080/InsulinDoseCalculator?xsd=1" uri="src/conf/xml-resources/web-service-references/InsulinDoseCalculator/wsdl/qcs06.dei.uc.pt_8080/InsulinDoseCalculator.xsd_1.xsd"/>
+    <system systemId="http://qcs01.dei.uc.pt:8080/InsulinDoseCalculator?wsdl" uri="src/conf/xml-resources/web-service-references/InsulinDoseCalculator/wsdl/qcs01.dei.uc.pt_8080/InsulinDoseCalculator.wsdl"/>
+    <system systemId="http://qcs01.dei.uc.pt:8080/InsulinDoseCalculator?xsd=1" uri="src/conf/xml-resources/web-service-references/InsulinDoseCalculator/wsdl/qcs01.dei.uc.pt_8080/InsulinDoseCalculator.xsd_1.xsd"/>
+    <system systemId="http://qcs10.dei.uc.pt:8080/InsulinDoseCalculator?wsdl" uri="src/conf/xml-resources/web-service-references/InsulinDoseCalculator_1/wsdl/qcs10.dei.uc.pt_8080/InsulinDoseCalculator.wsdl"/>
+    <system systemId="http://qcs10.dei.uc.pt:8080/InsulinDoseCalculator?xsd=1" uri="src/conf/xml-resources/web-service-references/InsulinDoseCalculator_1/wsdl/qcs10.dei.uc.pt_8080/InsulinDoseCalculator.xsd_1.xsd"/>
+    <system systemId="http://qcs12.dei.uc.pt:8080/insulin?wsdl" uri="src/conf/xml-resources/web-service-references/insulin/wsdl/qcs12.dei.uc.pt_8080/insulin.wsdl"/>
+    <system systemId="http://qcs12.dei.uc.pt:8080/insulin?xsd=1" uri="src/conf/xml-resources/web-service-references/insulin/wsdl/qcs12.dei.uc.pt_8080/insulin.xsd_1.xsd"/>
+    <system systemId="http://qcs18.dei.uc.pt:8080/insulin?wsdl" uri="src/conf/xml-resources/web-service-references/insulin_1/wsdl/qcs18.dei.uc.pt_8080/insulin.wsdl"/>
+    <system systemId="http://qcs18.dei.uc.pt:8080/insulin?xsd=1" uri="src/conf/xml-resources/web-service-references/insulin_1/wsdl/qcs18.dei.uc.pt_8080/insulin.xsd_1.xsd"/>
+    <system systemId="http://qcs16.dei.uc.pt:8080/InsulinDoseCalculator?wsdl" uri="src/conf/xml-resources/web-service-references/InsulinDoseCalculator_2/wsdl/qcs16.dei.uc.pt_8080/InsulinDoseCalculator.wsdl"/>
+    <system systemId="http://qcs06.dei.uc.pt:8080/insulin?wsdl" uri="src/conf/xml-resources/web-service-references/insulin_2/wsdl/qcs06.dei.uc.pt_8080/insulin.wsdl"/>
+    <system systemId="http://qcs06.dei.uc.pt:8080/insulin?xsd=1" uri="src/conf/xml-resources/web-service-references/insulin_2/wsdl/qcs06.dei.uc.pt_8080/insulin.xsd_1.xsd"/>
+    <system systemId="http://qcs07.dei.uc.pt:8080/insulin?wsdl" uri="src/conf/xml-resources/web-service-references/insulin_3/wsdl/qcs07.dei.uc.pt_8080/insulin.wsdl"/>
+    <system systemId="http://qcs07.dei.uc.pt:8080/insulin?xsd=1" uri="src/conf/xml-resources/web-service-references/insulin_3/wsdl/qcs07.dei.uc.pt_8080/insulin.xsd_1.xsd"/>
+    <system systemId="http://qcs19.dei.uc.pt/InsulinDoseCalculator/WebService?wsdl" uri="src/conf/xml-resources/web-service-references/WebService/wsdl/qcs19.dei.uc.pt/InsulinDoseCalculator/WebService.wsdl"/>
+    <system systemId="http://qcs19.dei.uc.pt:80/InsulinDoseCalculator/WebService?xsd=1" uri="src/conf/xml-resources/web-service-references/WebService/wsdl/qcs19.dei.uc.pt_80/InsulinDoseCalculator/WebService.xsd_1.xsd"/>
+    <system systemId="http://liis-lab.dei.uc.pt:8080/Server?wsdl" uri="src/conf/xml-resources/web-service-references/Server/wsdl/liis-lab.dei.uc.pt_8080/Server.wsdl"/>
+    <system systemId="http://liis-lab.dei.uc.pt:8080/Server?xsd=1" uri="src/conf/xml-resources/web-service-references/Server/wsdl/liis-lab.dei.uc.pt_8080/Server.xsd_1.xsd"/>
+    <system systemId="http://qcs02.dei.uc.pt:8080/insulinDosage?wsdl" uri="src/conf/xml-resources/web-service-references/insulinDosage/wsdl/qcs02.dei.uc.pt_8080/insulinDosage.wsdl"/>
+    <system systemId="http://qcs02.dei.uc.pt:8080/insulinDosage?xsd=1" uri="src/conf/xml-resources/web-service-references/insulinDosage/wsdl/qcs02.dei.uc.pt_8080/insulinDosage.xsd_1.xsd"/>
+    <system systemId="http://qcs05.dei.uc.pt:8080/insulin?wsdl" uri="src/conf/xml-resources/web-service-references/insulin_2/wsdl/qcs05.dei.uc.pt_8080/insulin.wsdl"/>
+    <system systemId="http://qcs05.dei.uc.pt:8080/insulin?xsd=1" uri="src/conf/xml-resources/web-service-references/insulin_2/wsdl/qcs05.dei.uc.pt_8080/insulin.xsd_1.xsd"/>
+</catalog>

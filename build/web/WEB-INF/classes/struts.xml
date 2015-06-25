@@ -1,0 +1,25 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    
+    <package name="default" extends="struts-default">
+        
+        <action name="MealtimeInsulin" class="controller.MealtimeInsulinAction">
+            <result name="success">/dose.jsp</result>
+            <result name="error">/insulin.jsp</result>
+            <result name="input">/insulin.jsp</result>
+        </action>
+        <action name="PersonalInsulin" class="controller.PersonalInsulinAction">
+            <result name="success">/dose.jsp</result>
+            <result name="error">/personalInsulin.jsp</result>
+            <result name="input">/personalInsulin.jsp</result>
+        </action>
+        <action name="BackgroundInsulin" class="controller.BackgroundInsulinAction">
+            <result name="success">/dose.jsp</result>
+            <result name="error">/backgroundInsulin.jsp</result>
+            <result name="input">/backgroundInsulin.jsp</result>
+        </action>
+        <!-- Add your actions here -->
+    </package>
+</struts>
